@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-p-a-r-k-o-m-a-t-парк-место-e",
+  "editForm": "i-i-s-p-a-r-k-o-m-a-t-парк-место-e",
+  "external": false,
+  "caption": "Парк место",
+  "name": "IISPARKOMATПаркМестоL",
+  "className": "ПаркМестоL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-p-a-r-k-o-m-a-t-парк-место",
+      "modelProjection": "ПаркМестоL"
+    }
+  ]
+}

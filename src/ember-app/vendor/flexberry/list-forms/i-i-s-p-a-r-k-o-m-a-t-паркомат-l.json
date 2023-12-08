@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-p-a-r-k-o-m-a-t-паркомат-e",
+  "editForm": "i-i-s-p-a-r-k-o-m-a-t-паркомат-e",
+  "external": false,
+  "caption": "Паркомат",
+  "name": "IISPARKOMATПаркоматL",
+  "className": "ПаркоматL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-p-a-r-k-o-m-a-t-паркомат",
+      "modelProjection": "ПаркоматL"
+    }
+  ]
+}

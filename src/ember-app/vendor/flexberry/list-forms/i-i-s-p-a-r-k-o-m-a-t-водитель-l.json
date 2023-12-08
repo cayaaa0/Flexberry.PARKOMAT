@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-p-a-r-k-o-m-a-t-водитель-e",
+  "editForm": "i-i-s-p-a-r-k-o-m-a-t-водитель-e",
+  "external": false,
+  "caption": "Водитель",
+  "name": "IISPARKOMATВодительL",
+  "className": "ВодительL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-p-a-r-k-o-m-a-t-водитель",
+      "modelProjection": "ВодительL"
+    }
+  ]
+}

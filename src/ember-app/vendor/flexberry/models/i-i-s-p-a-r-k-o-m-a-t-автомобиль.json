@@ -1,0 +1,77 @@
+﻿{
+  "name": "IISPARKOMATАвтомобиль",
+  "modelName": "i-i-s-p-a-r-k-o-m-a-t-автомобиль",
+  "className": "Автомобиль",
+  "nameSpace": "IIS.PARKOMAT",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "госНомер",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "водитель",
+      "relatedTo": "i-i-s-p-a-r-k-o-m-a-t-водитель",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "услуга",
+      "relatedTo": "i-i-s-p-a-r-k-o-m-a-t-услуга",
+      "inverse": "автомобиль"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "АвтомобильE",
+      "modelName": "i-i-s-p-a-r-k-o-m-a-t-автомобиль",
+      "attrs": [
+        {
+          "name": "госНомер",
+          "caption": "Гос номер",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Водитель",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Водитель",
+          "name": "водитель",
+          "relatedTo": "i-i-s-p-a-r-k-o-m-a-t-водитель",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "водитель",
+      "displayAttributeName": "фИО",
+      "required": true,
+      "relationName": "Автомобиль.Водитель",
+      "projection": "ВодительL",
+      "detailModelName": "i-i-s-p-a-r-k-o-m-a-t-автомобиль"
+    }
+  ],
+  "external": false,
+  "caption": "Услуга",
+  "name": "IISPARKOMATУслугаE",
+  "className": "УслугаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-p-a-r-k-o-m-a-t-услуга",
+      "modelProjection": "УслугаE"
+    }
+  ]
+}

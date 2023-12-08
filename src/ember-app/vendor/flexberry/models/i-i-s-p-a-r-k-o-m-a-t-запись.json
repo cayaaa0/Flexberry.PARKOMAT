@@ -1,0 +1,105 @@
+﻿{
+  "name": "IISPARKOMATЗапись",
+  "modelName": "i-i-s-p-a-r-k-o-m-a-t-запись",
+  "className": "Запись",
+  "nameSpace": "IIS.PARKOMAT",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "стоимость",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "паркМесто",
+      "relatedTo": "i-i-s-p-a-r-k-o-m-a-t-парк-место",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "услуга",
+      "relatedTo": "i-i-s-p-a-r-k-o-m-a-t-услуга",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "паркомат",
+      "relatedTo": "i-i-s-p-a-r-k-o-m-a-t-паркомат",
+      "inverse": "запись"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗаписьE",
+      "modelName": "i-i-s-p-a-r-k-o-m-a-t-запись",
+      "attrs": [
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Номер",
+          "lookupValueField": "номер",
+          "relationName": "ПаркМесто",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "Номер",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Парк место",
+          "name": "паркМесто",
+          "relatedTo": "i-i-s-p-a-r-k-o-m-a-t-парк-место",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Длительность",
+          "lookupValueField": "длительность",
+          "relationName": "Услуга",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "длительность",
+              "caption": "Длительность",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Услуга",
+          "name": "услуга",
+          "relatedTo": "i-i-s-p-a-r-k-o-m-a-t-услуга",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

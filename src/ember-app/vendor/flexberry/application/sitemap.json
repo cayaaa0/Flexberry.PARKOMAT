@@ -1,0 +1,66 @@
+﻿{
+  "applicationCaption": "PARKOMAT",
+  "applicationTitle": "PARKOMAT",
+  "items": [
+    {
+      "link": null,
+      "menuName": "услуга",
+      "caption": "Услуга",
+      "title": "Услуга",
+      "children": [
+        {
+          "link": "i-i-s-p-a-r-k-o-m-a-t-услуга-l",
+          "menuName": null,
+          "caption": "Услуга",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "водитель",
+      "caption": "Водитель",
+      "title": "Водитель",
+      "children": [
+        {
+          "link": "i-i-s-p-a-r-k-o-m-a-t-водитель-l",
+          "menuName": null,
+          "caption": "Водитель",
+          "title": "Водитель",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "паркомат",
+      "caption": "Паркомат",
+      "title": "Паркомат",
+      "children": [
+        {
+          "link": "i-i-s-p-a-r-k-o-m-a-t-паркомат-l",
+          "menuName": null,
+          "caption": "Паркомат",
+          "title": "Паркомат",
+          "children": null
+        },
+        {
+          "link": "i-i-s-p-a-r-k-o-m-a-t-терминал-l",
+          "menuName": null,
+          "caption": "Терминал",
+          "title": "Терминал",
+          "children": null
+        },
+        {
+          "link": "i-i-s-p-a-r-k-o-m-a-t-парк-место-l",
+          "menuName": null,
+          "caption": "Парковочное место",
+          "title": "Парк место",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

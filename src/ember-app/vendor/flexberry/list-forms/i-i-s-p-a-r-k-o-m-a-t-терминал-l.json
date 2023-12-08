@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-p-a-r-k-o-m-a-t-терминал-e",
+  "editForm": "i-i-s-p-a-r-k-o-m-a-t-терминал-e",
+  "external": false,
+  "caption": "Терминал",
+  "name": "IISPARKOMATТерминалL",
+  "className": "ТерминалL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-p-a-r-k-o-m-a-t-терминал",
+      "modelProjection": "ТерминалL"
+    }
+  ]
+}

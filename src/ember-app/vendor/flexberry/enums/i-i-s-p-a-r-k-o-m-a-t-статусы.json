@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.PARKOMAT",
+  "className": "Статусы",
+  "enumObjects": {
+    "1": "Свободно",
+    "2": "Занято"
+  }
+}

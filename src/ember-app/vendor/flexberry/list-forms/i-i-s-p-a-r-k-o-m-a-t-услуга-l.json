@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-p-a-r-k-o-m-a-t-услуга-e",
+  "editForm": "i-i-s-p-a-r-k-o-m-a-t-услуга-e",
+  "external": false,
+  "caption": "Услуга",
+  "name": "IISPARKOMATУслугаL",
+  "className": "УслугаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-p-a-r-k-o-m-a-t-услуга",
+      "modelProjection": "УслугаL"
+    }
+  ]
+}

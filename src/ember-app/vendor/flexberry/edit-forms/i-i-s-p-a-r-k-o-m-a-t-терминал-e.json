@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Терминал",
+  "name": "IISPARKOMATТерминалE",
+  "className": "ТерминалE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-p-a-r-k-o-m-a-t-терминал",
+      "modelProjection": "ТерминалE"
+    }
+  ]
+}

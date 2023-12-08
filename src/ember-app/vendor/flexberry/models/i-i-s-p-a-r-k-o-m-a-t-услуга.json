@@ -1,0 +1,110 @@
+﻿{
+  "name": "IISPARKOMATУслуга",
+  "modelName": "i-i-s-p-a-r-k-o-m-a-t-услуга",
+  "className": "Услуга",
+  "nameSpace": "IIS.PARKOMAT",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "длительность",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "i-i-s-p-a-r-k-o-m-a-t-услуги",
+      "flexberryType": "Услуги",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерУсл",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "автомобиль",
+      "relatedTo": "i-i-s-p-a-r-k-o-m-a-t-автомобиль",
+      "inverse": "услуга"
+    }
+  ],
+  "projections": [
+    {
+      "name": "УслугаE",
+      "modelName": "i-i-s-p-a-r-k-o-m-a-t-услуга",
+      "attrs": [
+        {
+          "name": "номерУсл",
+          "caption": "Номер услуги",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "длительность",
+          "caption": "Длительность",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "АвтомобильE",
+          "caption": "Автомобиль",
+          "name": "автомобиль",
+          "relatedTo": "i-i-s-p-a-r-k-o-m-a-t-автомобиль",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "УслугаL",
+      "modelName": "i-i-s-p-a-r-k-o-m-a-t-услуга",
+      "attrs": [
+        {
+          "name": "номерУсл",
+          "caption": "Номер услуги",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "длительность",
+          "caption": "Длительность",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
